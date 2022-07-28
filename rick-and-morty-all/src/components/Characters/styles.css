@@ -1,0 +1,43 @@
+.container-character {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container-card {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 250px;
+  display: flex;
+  gap: 30px;
+}
+h1 {
+  color: red;
+  box-shadow: 8px 0px 20px red;
+}
+@media (min-width: 768px) {
+  .container-card {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 600px;
+    display: flex;
+    gap: 80px;
+  }
+  .container-character {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .container-character {
+    width: 100%;
+  }
+  .container-card {
+    width: 1000px;
+    gap: 50px;
+  }
+}

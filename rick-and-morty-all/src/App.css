@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  width: 100vw;
+  height: 100vh;
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+.btn-next {
+  width: 50px;
+  color: #ffff;
+  background-color: rgb(40, 44, 52);
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+.container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.container-cloud {
+  border: none;
+  background-color: rgba(40, 44, 52, 0.6);
+  position: absolute;
+  bottom: 0;
+  width: 753.625em;
+  height: 43.75em;
+  animation: rotationLeft 80s linear infinite;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .container-cloud {
+    width: 287.625em;
+  }
+}
+@media (min-width: 1024px) {
+  .container-cloud {
+    width: 145em;
+  }
+}
+@keyframes rotationLeft {
+  0% {
+    transform: translateZ(50);
+  }
+  100% {
+    transform: translate3d(-90%, 0, 0);
+  }
+}
+.img_cloud {
+  width: 100%;
+  margin-top: 4rem;
+  opacity: 0.5;
+}
